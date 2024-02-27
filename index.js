@@ -17,7 +17,7 @@ app.use(express.static('public'));
 app.route('/api/whoami')
   .get(function(req, res, next) {
     res.send({
-      ipadress: req.ip,
+      ipaddress: req.ip,
       language: req.headers['accept-language'], 
       software: req.headers['user-agent']
     })
